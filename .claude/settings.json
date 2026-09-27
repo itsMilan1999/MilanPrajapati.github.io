@@ -20,7 +20,12 @@
       "Bash(ssh -T -o BatchMode=yes -o ConnectTimeout=10 git@github.com)",
       "Bash(gh auth *)",
       "Bash(git remote *)",
-      "Bash(git restore *)"
+      "Bash(git restore *)",
+      "Read(//Users/milan/Documents/Milan Personal/Milan Documents/itsMilan1999/**)",
+      "Bash(qlmanage -t -s 256 -o \"/private/tmp/claude-501/-Users-milan-Documents-Milan-Personal-Milan-Documents-MilanPrajapati-github-io/8a044217-e19c-4639-b11a-46ed3696dc9e/scratchpad\" images/favicon.svg)"
+    ],
+    "additionalDirectories": [
+      "/Users/milan/Documents/Milan Personal/Milan Documents/itsMilan1999"
     ]
   }
 }
