@@ -8,7 +8,14 @@
       "Bash(sips -Z 1400 -s formatOptions 82 images/MProfile1.jpg --out images/MProfile1-web.jpg)",
       "Bash(sed -i '' 's#images/MProfile1.jpg\" alt=#images/MProfile1-web.jpg\" alt=#' index.html)",
       "Bash(sed -i '' 's#og:image\" content=\"images/MProfile1.jpg#og:image\" content=\"images/MProfile1-web.jpg#' index.html)",
-      "Bash(cat)"
+      "Bash(cat)",
+      "Bash(grep -o '#f56a6a\\\\|rgba\\(245, 106, 106, [0-9.]*\\)\\\\|#f67878\\\\|#f45c5c\\\\|#f[0-9a-f]\\\\{5\\\\}' assets/css/main.css)",
+      "Bash(git check-ignore *)",
+      "Bash(sips -g pixelWidth -g pixelHeight images/airflowImage.jpeg)",
+      "Bash(git checkout *)",
+      "Bash(rm assets/js/theme.js)",
+      "Bash(sips -s format jpeg -s formatOptions 80 images/airflowImage.jpeg --out images/airflowImage.jpeg)",
+      "Bash(sips -s format jpeg -s formatOptions 80 images/AirflowLLM.jpeg --out images/AirflowLLM.jpeg)"
     ]
   }
 }

@@ -2,7 +2,8 @@
 
 :root {
 	--accent: #f56a6a;
-	--accent-soft: rgba(245, 106, 106, 0.1);
+	--accent-rgb: 245, 106, 106;
+	--accent-soft: rgba(var(--accent-rgb), 0.1);
 	--ink: #3d4449;
 	--muted: #7f888f;
 	--line: rgba(210, 215, 217, 0.75);
@@ -104,7 +105,7 @@
 }
 
 .tags.accent li {
-	border-color: rgba(245, 106, 106, 0.35);
+	border-color: rgba(var(--accent-rgb), 0.35);
 	background: var(--accent-soft);
 }
 
@@ -309,26 +310,6 @@
 	color: var(--muted);
 }
 
-/* Cover art for projects that don't have a screenshot. */
-.posts article .image.cover {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	aspect-ratio: 16 / 9;
-	border-radius: 0.375em;
-	background: linear-gradient(135deg, #3d4449 0%, #5b6770 55%, #f56a6a 140%);
-	color: #fff;
-	border-bottom: 0;
-}
-
-.posts article .image.cover .icon {
-	font-size: 3.5em;
-}
-
-.posts article .image.cover.alt {
-	background: linear-gradient(135deg, #2e3b4e 0%, #43607a 55%, #f56a6a 150%);
-}
-
 /* ---------- Sidebar / footer ---------- */
 
 #sidebar .contact li a {
@@ -355,3 +336,4 @@ ul.actions {
 	flex-wrap: wrap;
 	row-gap: 0.75em;
 }
+
