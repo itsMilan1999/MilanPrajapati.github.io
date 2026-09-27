@@ -15,7 +15,12 @@
       "Bash(git checkout *)",
       "Bash(rm assets/js/theme.js)",
       "Bash(sips -s format jpeg -s formatOptions 80 images/airflowImage.jpeg --out images/airflowImage.jpeg)",
-      "Bash(sips -s format jpeg -s formatOptions 80 images/AirflowLLM.jpeg --out images/AirflowLLM.jpeg)"
+      "Bash(sips -s format jpeg -s formatOptions 80 images/AirflowLLM.jpeg --out images/AirflowLLM.jpeg)",
+      "Read(//Users/milan/.ssh/**)",
+      "Bash(ssh -T -o BatchMode=yes -o ConnectTimeout=10 git@github.com)",
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(git restore *)"
     ]
   }
 }
