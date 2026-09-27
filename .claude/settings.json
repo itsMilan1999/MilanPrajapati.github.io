@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mdfind -name \"Senior Data Operations Analyst\")",
+      "Bash(cd \"/Users/milan/Documents/Milan Personal/Milan Documents/MilanPrajapati.github.io\"; cp \"/Users/milan/Downloads/Senior Data Operations Analyst - Milan Prajapati.pdf\" \"images/Milan Resume.pdf\" && ls -la images/\"Milan Resume.pdf\")",
+      "Bash(python3 -)",
+      "Bash(sips -g pixelWidth -g pixelHeight images/MProfile1.jpg)",
+      "Bash(sips -Z 1400 -s formatOptions 82 images/MProfile1.jpg --out images/MProfile1-web.jpg)",
+      "Bash(sed -i '' 's#images/MProfile1.jpg\" alt=#images/MProfile1-web.jpg\" alt=#' index.html)",
+      "Bash(sed -i '' 's#og:image\" content=\"images/MProfile1.jpg#og:image\" content=\"images/MProfile1-web.jpg#' index.html)",
+      "Bash(cat)"
+    ]
+  }
+}
