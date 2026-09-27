@@ -22,7 +22,12 @@
       "Bash(git remote *)",
       "Bash(git restore *)",
       "Read(//Users/milan/Documents/Milan Personal/Milan Documents/itsMilan1999/**)",
-      "Bash(qlmanage -t -s 256 -o \"/private/tmp/claude-501/-Users-milan-Documents-Milan-Personal-Milan-Documents-MilanPrajapati-github-io/8a044217-e19c-4639-b11a-46ed3696dc9e/scratchpad\" images/favicon.svg)"
+      "Bash(qlmanage -t -s 256 -o \"/private/tmp/claude-501/-Users-milan-Documents-Milan-Personal-Milan-Documents-MilanPrajapati-github-io/8a044217-e19c-4639-b11a-46ed3696dc9e/scratchpad\" images/favicon.svg)",
+      "Bash(curl -s -m 20 \"https://github-readme-streak-stats.herokuapp.com/?user=itsmilan1999&theme=dark&hide_border=true&ring=F56A6A&fire=F56A6A&currStreakLabel=F56A6A\")",
+      "Bash(grep -oE '>[^<>]{1,40}<')",
+      "Bash(curl -s -m 20 \"https://github-readme-streak-stats.herokuapp.com/?user=itsmilan1999&theme=dark\")",
+      "Bash(curl -s -m 20 \"https://github-readme-streak-stats.herokuapp.com/?user=itsmilan1999\")",
+      "Bash(open /private/tmp/claude-501/-Users-milan-Documents-Milan-Personal-Milan-Documents-MilanPrajapati-github-io/f33dccac-fc23-43e3-bdbc-6fe8f0c94a81/scratchpad/readme.html)"
     ],
     "additionalDirectories": [
       "/Users/milan/Documents/Milan Personal/Milan Documents/itsMilan1999"
