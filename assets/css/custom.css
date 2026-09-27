@@ -1,0 +1,339 @@
+/* Portfolio additions layered on top of the Editorial theme (main.css). */
+
+:root {
+	--accent: #f56a6a;
+	--accent-rgb: 245, 106, 106;
+	--accent-soft: rgba(var(--accent-rgb), 0.1);
+	--ink: #3d4449;
+	--muted: #7f888f;
+	--line: rgba(210, 215, 217, 0.75);
+	--card: #f5f6f7;
+}
+
+/* ---------- Banner ---------- */
+
+#banner .role-line {
+	color: var(--accent);
+	font-family: "Roboto Slab", serif;
+	font-size: 1.15em;
+	margin-top: 0.5em;
+}
+
+#banner .image.object img {
+	border-radius: 0.5em;
+}
+
+/* ---------- Stat tiles ---------- */
+
+.stats {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.5em;
+	margin: 0 0 1em 0;
+	padding: 0;
+	list-style: none;
+}
+
+.stats li {
+	background: var(--card);
+	border-left: 3px solid var(--accent);
+	border-radius: 0.375em;
+	padding: 1.25em 1.25em 1em;
+	margin: 0;
+}
+
+.stats .value {
+	display: block;
+	font-family: "Roboto Slab", serif;
+	font-size: 2em;
+	font-weight: 700;
+	color: var(--ink);
+	line-height: 1.1;
+}
+
+.stats .label {
+	display: block;
+	font-size: 0.85em;
+	color: var(--muted);
+	margin-top: 0.35em;
+	line-height: 1.4;
+}
+
+@media screen and (max-width: 980px) {
+	.stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media screen and (max-width: 480px) {
+	.stats { gap: 0.75em; }
+	.stats .value { font-size: 1.6em; }
+}
+
+/* ---------- Skill tags ---------- */
+
+.skill-groups {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 2em 3em;
+}
+
+.skill-groups h4 {
+	margin-bottom: 0.75em;
+}
+
+@media screen and (max-width: 736px) {
+	.skill-groups { grid-template-columns: 1fr; }
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1em 0;
+}
+
+.tags li {
+	padding: 0.25em 0.8em;
+	margin: 0;
+	border: 1px solid var(--line);
+	border-radius: 2em;
+	font-size: 0.8em;
+	line-height: 1.8;
+	white-space: nowrap;
+	background: #fff;
+}
+
+.tags.accent li {
+	border-color: rgba(var(--accent-rgb), 0.35);
+	background: var(--accent-soft);
+}
+
+/* ---------- Highlight cards (home: what I'm doing now) ---------- */
+
+.highlight-cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.5em;
+}
+
+.highlight-cards article {
+	border: 1px solid var(--line);
+	border-radius: 0.375em;
+	padding: 1.5em;
+}
+
+.highlight-cards .icon {
+	color: var(--accent);
+	font-size: 1.5em;
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+
+.highlight-cards h3 {
+	font-size: 1.05em;
+	margin-bottom: 0.5em;
+}
+
+.highlight-cards p {
+	font-size: 0.9em;
+	margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+	.highlight-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media screen and (max-width: 736px) {
+	.highlight-cards { grid-template-columns: 1fr; }
+}
+
+/* ---------- Resume timeline ---------- */
+
+.timeline {
+	position: relative;
+	padding-left: 2em;
+	border-left: 2px solid var(--line);
+	margin-left: 0.4em;
+}
+
+.timeline .entry {
+	position: relative;
+	padding-bottom: 2.5em;
+}
+
+.timeline .entry:last-child {
+	padding-bottom: 0.5em;
+}
+
+.timeline .entry::before {
+	content: "";
+	position: absolute;
+	left: calc(-2em - 8px);
+	top: 0.35em;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #fff;
+	border: 3px solid var(--accent);
+}
+
+.timeline .entry.current::before {
+	background: var(--accent);
+}
+
+.timeline .entry-head {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 0.25em 1em;
+}
+
+.timeline h3 {
+	margin: 0;
+}
+
+.timeline .dates {
+	font-size: 0.85em;
+	color: var(--muted);
+	white-space: nowrap;
+}
+
+.timeline .org {
+	margin: 0.2em 0 0.9em 0;
+	font-style: italic;
+	color: var(--muted);
+}
+
+.timeline .org strong {
+	font-style: normal;
+	color: var(--ink);
+}
+
+.timeline h4.sub {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--accent);
+	margin: 1em 0 0.5em 0;
+}
+
+.timeline ul {
+	margin-bottom: 0.75em;
+}
+
+.timeline ul li {
+	padding-left: 0.25em;
+	margin-bottom: 0.35em;
+}
+
+.timeline .tags {
+	margin-top: 0.75em;
+}
+
+/* ---------- Education / certs grid on resume ---------- */
+
+.edu-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5em;
+}
+
+.edu-grid article {
+	background: var(--card);
+	border-radius: 0.375em;
+	padding: 1.5em;
+}
+
+.edu-grid h3 {
+	font-size: 1em;
+	margin-bottom: 0.25em;
+}
+
+.edu-grid p {
+	margin: 0;
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 736px) {
+	.edu-grid { grid-template-columns: 1fr; }
+}
+
+.cert-list {
+	list-style: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.5em 2em;
+}
+
+.cert-list li {
+	padding: 0.5em 0 0.5em 1.75em;
+	margin: 0;
+	position: relative;
+	border-bottom: 1px solid var(--line);
+}
+
+.cert-list li::before {
+	content: "\f559";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	left: 0;
+	color: var(--accent);
+}
+
+@media screen and (max-width: 736px) {
+	.cert-list { grid-template-columns: 1fr; }
+}
+
+/* ---------- Projects ---------- */
+
+.posts article .badge {
+	display: inline-block;
+	font-size: 0.7em;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--accent);
+	margin-bottom: 0.5em;
+}
+
+.posts article .tags {
+	margin-bottom: 1.5em;
+}
+
+.posts article .note {
+	font-size: 0.85em;
+	font-style: italic;
+	color: var(--muted);
+}
+
+/* ---------- Sidebar / footer ---------- */
+
+#sidebar .contact li a {
+	word-break: break-all;
+}
+
+#footer .copyright {
+	font-size: 0.8em;
+}
+
+.center-actions {
+	justify-content: center;
+	text-align: center;
+	margin-top: 2em;
+}
+
+/* Keep the face in frame when the banner stacks and crops the portrait. */
+#banner .image.object img {
+	object-position: center 15%;
+}
+
+/* Let button rows wrap on narrow screens instead of overflowing. */
+ul.actions {
+	flex-wrap: wrap;
+	row-gap: 0.75em;
+}
+

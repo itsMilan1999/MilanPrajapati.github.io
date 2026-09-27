@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mdfind -name \"Senior Data Operations Analyst\")",
+      "Bash(cd \"/Users/milan/Documents/Milan Personal/Milan Documents/MilanPrajapati.github.io\"; cp \"/Users/milan/Downloads/Senior Data Operations Analyst - Milan Prajapati.pdf\" \"images/Milan Resume.pdf\" && ls -la images/\"Milan Resume.pdf\")",
+      "Bash(python3 -)",
+      "Bash(sips -g pixelWidth -g pixelHeight images/MProfile1.jpg)",
+      "Bash(sips -Z 1400 -s formatOptions 82 images/MProfile1.jpg --out images/MProfile1-web.jpg)",
+      "Bash(sed -i '' 's#images/MProfile1.jpg\" alt=#images/MProfile1-web.jpg\" alt=#' index.html)",
+      "Bash(sed -i '' 's#og:image\" content=\"images/MProfile1.jpg#og:image\" content=\"images/MProfile1-web.jpg#' index.html)",
+      "Bash(cat)",
+      "Bash(grep -o '#f56a6a\\\\|rgba\\(245, 106, 106, [0-9.]*\\)\\\\|#f67878\\\\|#f45c5c\\\\|#f[0-9a-f]\\\\{5\\\\}' assets/css/main.css)",
+      "Bash(git check-ignore *)",
+      "Bash(sips -g pixelWidth -g pixelHeight images/airflowImage.jpeg)",
+      "Bash(git checkout *)",
+      "Bash(rm assets/js/theme.js)",
+      "Bash(sips -s format jpeg -s formatOptions 80 images/airflowImage.jpeg --out images/airflowImage.jpeg)",
+      "Bash(sips -s format jpeg -s formatOptions 80 images/AirflowLLM.jpeg --out images/AirflowLLM.jpeg)",
+      "Read(//Users/milan/.ssh/**)",
+      "Bash(ssh -T -o BatchMode=yes -o ConnectTimeout=10 git@github.com)",
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(git restore *)",
+      "Read(//Users/milan/Documents/Milan Personal/Milan Documents/itsMilan1999/**)",
+      "Bash(qlmanage -t -s 256 -o \"/private/tmp/claude-501/-Users-milan-Documents-Milan-Personal-Milan-Documents-MilanPrajapati-github-io/8a044217-e19c-4639-b11a-46ed3696dc9e/scratchpad\" images/favicon.svg)",
+      "Bash(curl -s -m 20 \"https://github-readme-streak-stats.herokuapp.com/?user=itsmilan1999&theme=dark&hide_border=true&ring=F56A6A&fire=F56A6A&currStreakLabel=F56A6A\")",
+      "Bash(grep -oE '>[^<>]{1,40}<')",
+      "Bash(curl -s -m 20 \"https://github-readme-streak-stats.herokuapp.com/?user=itsmilan1999&theme=dark\")",
+      "Bash(curl -s -m 20 \"https://github-readme-streak-stats.herokuapp.com/?user=itsmilan1999\")",
+      "Bash(open /private/tmp/claude-501/-Users-milan-Documents-Milan-Personal-Milan-Documents-MilanPrajapati-github-io/f33dccac-fc23-43e3-bdbc-6fe8f0c94a81/scratchpad/readme.html)"
+    ],
+    "additionalDirectories": [
+      "/Users/milan/Documents/Milan Personal/Milan Documents/itsMilan1999"
+    ]
+  }
+}
